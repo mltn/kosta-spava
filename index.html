@@ -161,7 +161,8 @@
                     });
                   };
 
-                  window.makeTransformable = makeTransformable
+                  window.makeTransformable = makeTransformable;
+                  window.exportTransformMatrix = selector => $(selector)[0].style.transform;
 
                 }).call(this);
 
